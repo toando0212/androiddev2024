@@ -10,7 +10,7 @@ Students are expected to:
 Student Info
 =======================
 
-* Name: *YourNameHere*
-* ID: *YourIdHere*
+* Name: Đỗ Duy Toàn
+* ID: 22BI13420
 * Group ID: *Your Group ID here*
 * Project Name: *Your Project Name here*
