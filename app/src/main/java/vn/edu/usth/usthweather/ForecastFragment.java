@@ -8,6 +8,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.graphics.Color;
+import android.widget.LinearLayout;
+import android.widget.LinearLayout.LayoutParams;
 
 
 /**
@@ -61,6 +63,16 @@ public class ForecastFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
+
+        LinearLayout layout = new LinearLayout(getActivity());
+        layout.setOrientation(LinearLayout.VERTICAL);
+
+        LayoutParams params = new LayoutParams(
+          LayoutParams.MATCH_PARENT,
+          LayoutParams.WRAP_CONTENT
+        );
+        layout.setLayoutParams(params);
+
         View view = inflater.inflate(R.layout.fragment_forecast, container, false);
         view.setBackgroundColor(Color.parseColor("#20FF0000"));
         return view;
