@@ -12,5 +12,5 @@ Student Info
 
 * Name: Đỗ Duy Toàn
 * ID: 22BI13420
-* Group ID: *Your Group ID here*
-* Project Name: *Your Project Name here*
+* Group ID: 3
+* Project Name: Wikipedia Client
