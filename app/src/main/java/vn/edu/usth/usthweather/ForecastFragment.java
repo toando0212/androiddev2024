@@ -3,7 +3,7 @@ package vn.edu.usth.usthweather;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
-
+import android.widget.ImageView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -63,18 +63,30 @@ public class ForecastFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-
-        LinearLayout layout = new LinearLayout(getActivity());
-        layout.setOrientation(LinearLayout.VERTICAL);
-
-        LayoutParams params = new LayoutParams(
-          LayoutParams.MATCH_PARENT,
-          LayoutParams.WRAP_CONTENT
-        );
-        layout.setLayoutParams(params);
-
         View view = inflater.inflate(R.layout.fragment_forecast, container, false);
-        view.setBackgroundColor(Color.parseColor("#20FF0000"));
+        LinearLayout forecastArea = view.findViewById(R.id.forecast_area);
+
+        int[] weatherIcons = {
+                R.drawable.sunny_day,
+                R.drawable.rainy_night,
+                R.drawable.cloudy_day
+        };
+
+        for (int icon : weatherIcons) {
+            ImageView imageView = new ImageView(getActivity());
+            imageView.setImageResource(icon);
+
+            LinearLayout.LayoutParams imageParams = new LinearLayout.LayoutParams(
+                    LinearLayout.LayoutParams.WRAP_CONTENT,
+                    LinearLayout.LayoutParams.WRAP_CONTENT
+            );
+            imageView.setLayoutParams(imageParams);
+
+            // Add each ImageView to the forecast area LinearLayout
+            forecastArea.addView(imageView);
+        }
+
         return view;
     }
+
 }
