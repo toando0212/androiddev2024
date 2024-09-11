@@ -3,7 +3,9 @@ package vn.edu.usth.usthweather;
 import android.os.Bundle;
 import android.util.Log;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.viewpager.widget.ViewPager;
 
+import com.google.android.material.tabs.TabLayout;
 
 
 public class WeatherActivity extends AppCompatActivity {
@@ -13,6 +15,17 @@ public class WeatherActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_weather);
         Log.i("WeatherActivity", "onCreate");
+
+        ViewPager viewPager = findViewById(R.id.viewPager);
+        TabLayout tabLayout = findViewById(R.id.tabLayout);
+
+        ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
+        adapter.addFragment(new WeatherAndForecastFragment(), "HANOI, VIETNAM");
+        adapter.addFragment(new WeatherAndForecastFragment(), "PARIS, FRANCE");
+        adapter.addFragment(new WeatherAndForecastFragment(), "TOULOUSE, FRANCE");
+        viewPager.setAdapter(adapter);
+
+        tabLayout.setupWithViewPager(viewPager);
     }
 
     @Override
