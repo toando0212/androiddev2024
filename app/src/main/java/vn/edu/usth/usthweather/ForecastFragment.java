@@ -44,24 +44,24 @@ public class ForecastFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_forecast, container, false);
         LinearLayout forecastArea = view.findViewById(R.id.forecast_area);
 
-        int[] weatherIcons = {
-                R.drawable.sunny_day,
-                R.drawable.rainy_night,
-                R.drawable.cloudy_day
-        };
+//        int[] weatherIcons = {
+//                R.drawable.sunny_day,
+//                R.drawable.rainy_night,
+//                R.drawable.cloudy_day
+//        };
 
-        for (int icon : weatherIcons) {
-            ImageView imageView = new ImageView(getActivity());
-            imageView.setImageResource(icon);
-
-            LinearLayout.LayoutParams imageParams = new LinearLayout.LayoutParams(
-                    LinearLayout.LayoutParams.WRAP_CONTENT,
-                    LinearLayout.LayoutParams.WRAP_CONTENT
-            );
-            imageView.setLayoutParams(imageParams);
-
-            forecastArea.addView(imageView);
-        }
+//        for (int icon : weatherIcons) {
+//            ImageView imageView = new ImageView(getActivity());
+//            imageView.setImageResource(icon);
+//
+//            LinearLayout.LayoutParams imageParams = new LinearLayout.LayoutParams(
+//                    LinearLayout.LayoutParams.WRAP_CONTENT,
+//                    LinearLayout.LayoutParams.WRAP_CONTENT
+//            );
+//            imageView.setLayoutParams(imageParams);
+//
+//            forecastArea.addView(imageView);
+//        }
 
         return view;
     }

@@ -3,7 +3,8 @@ package vn.edu.usth.usthweather;
 import android.os.Bundle;
 import android.util.Log;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.FragmentTransaction;
+
+
 
 public class WeatherActivity extends AppCompatActivity {
 
@@ -12,11 +13,6 @@ public class WeatherActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_weather);
         Log.i("WeatherActivity", "onCreate");
-
-        ForecastFragment forecastFragment = new ForecastFragment();
-        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-        transaction.add(R.id.fragment_container, forecastFragment); // Add ForecastFragment to the container
-        transaction.commit();
     }
 
     @Override
