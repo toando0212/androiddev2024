@@ -13,4 +13,4 @@ Student Info
 * Name: Đỗ Duy Toàn
 * ID: 22BI13420
 * Group ID: 3
-* Project Name: Wikipedia Client
+* Project Name: Wikipedia Client.
