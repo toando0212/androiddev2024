@@ -1,6 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-
-    <string name="app_name">USTH Weather</string>
+    <string name="app_name">Thời Tiết USTH</string>
     <string name="hanoi">Hà Nội</string>
     <string name="temperature">25°C</string>
     <string name="partly_cloudy">Nhiều mây</string>

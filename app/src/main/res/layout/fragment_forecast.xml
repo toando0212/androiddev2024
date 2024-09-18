@@ -82,25 +82,25 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Mon"
+            android:text="Wed"
             android:textSize="18sp" />
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/cloudy_day" />
+            android:src="@drawable/rainy_night" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Partly Cloudy"
+            android:text="Rain"
             android:paddingStart="8dp"
             android:textSize="18sp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="24C - 31C"
+            android:text="22C - 23C"
             android:paddingStart="8dp"
             android:textSize="18sp" />
     </LinearLayout>
@@ -114,25 +114,25 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Mon"
+            android:text="Thu"
             android:textSize="18sp" />
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/cloudy_day" />
+            android:src="@drawable/rainy_night" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Partly Cloudy"
+            android:text="Scatterd Shower"
             android:paddingStart="8dp"
             android:textSize="18sp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="24C - 31C"
+            android:text="22C - 27C"
             android:paddingStart="8dp"
             android:textSize="18sp" />
     </LinearLayout>
